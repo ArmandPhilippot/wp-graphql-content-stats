@@ -72,6 +72,11 @@ class WPGraphQL_Content_Stats {
 		 * The class responsible of WPGraphQL types registration.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-types.php';
+
+		/**
+		 * The class responsible of WPGraphQL fields registration.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-fields.php';
 	}
 
 	/**
@@ -92,6 +97,16 @@ class WPGraphQL_Content_Stats {
 	public function add_content_stats_types() {
 		$types = new Types();
 		$types->init();
+	}
+
+	/**
+	 * Add a content stats fields to WPGraphQL.
+	 *
+	 * @since 0.1.0
+	 */
+	public function add_content_stats_fields() {
+		$fields = new Fields();
+		$fields->init();
 	}
 
 	/**
@@ -123,6 +138,7 @@ class WPGraphQL_Content_Stats {
 		$this->set_locale();
 		add_action( 'plugins_loaded', array( $this, 'check_plugin_dependencies' ) );
 		$this->add_content_stats_types();
+		$this->add_content_stats_fields();
 	}
 
 	/**
