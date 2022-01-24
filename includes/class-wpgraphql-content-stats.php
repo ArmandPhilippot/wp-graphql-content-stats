@@ -52,6 +52,31 @@ class WPGraphQL_Content_Stats {
 		$this->plugin_version     = defined( WPGRAPHQL_CONTENT_STATS_VERSION ) ? WPGRAPHQL_CONTENT_STATS_VERSION : '1.0.0';
 		$this->plugin_name        = 'WPGraphQL Content Stats';
 		$this->plugin_description = __( 'Add some stats to WPGraphQL: total posts, word count and estimated reading time.', 'wpg-content-stats' );
+
+		$this->load_dependencies();
+		$this->set_locale();
+	}
+
+	/**
+	 * Loads the required dependencies for this plugin.
+	 *
+	 * @since  0.1.0
+	 */
+	private function load_dependencies() {
+		/**
+		 * The class responsible of plugin internationalization.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-i18n.php';
+	}
+
+	/**
+	 * Define the locale used by the plugin.
+	 *
+	 * @since 0.1.0
+	 */
+	private function set_locale() {
+		$translation = new I18n();
+		$translation->init();
 	}
 
 	/**
@@ -80,6 +105,7 @@ class WPGraphQL_Content_Stats {
 	 * @since 0.1.0
 	 */
 	public function run() {
+		$this->set_locale();
 		add_action( 'plugins_loaded', array( $this, 'check_plugin_dependencies' ) );
 	}
 
