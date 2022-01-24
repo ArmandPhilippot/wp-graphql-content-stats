@@ -1,0 +1,86 @@
+# Copyright (C) 2022 WPGraphQL-Content Stats
+# This file is distributed under the same license as the WPGraphQL-Content Stats package.
+msgid ""
+msgstr ""
+"Project-Id-Version: WPGraphQL-Content Stats\n"
+"Report-Msgid-Bugs-To: https://github.com/ArmandPhilippot/wp-graphql-content-"
+"stats/issues\n"
+"POT-Creation-Date: 2022-01-24 12:12+0100\n"
+"PO-Revision-Date: \n"
+"Last-Translator: Armand Philippot <contact@armandphilippot.com>\n"
+"Language-Team: Armand Philippot <contact@armandphilippot.com>\n"
+"Language: fr_FR\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;"
+"_nx_noop:1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;"
+"esc_html_e;esc_html_x:1,2c\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Poedit 3.0\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: includes/class-fields.php:96
+msgid "Return the content statistics."
+msgstr "Retourne les statistiques du contenu."
+
+#: includes/class-fields.php:171
+msgid "Return the total of found posts or found users depending on query type."
+msgstr ""
+"Retourne le nombre total d'articles trouvés ou d'utilisateurs trouvés en "
+"fonction du type de requête."
+
+#: includes/class-types.php:37
+msgid "The format of reading time field data."
+msgstr "Le format des données du champ temps de lecture."
+
+#: includes/class-types.php:40
+msgid "minutes"
+msgstr "minutes"
+
+#: includes/class-types.php:41
+msgid "Provide a rounded estimate of reading time in minutes."
+msgstr "Fournit une estimation arrondie du temps de lecture en minutes."
+
+#: includes/class-types.php:45
+msgid "seconds"
+msgstr "secondes"
+
+#: includes/class-types.php:46
+msgid "Provide a rounded estimate of reading time in seconds."
+msgstr "Fournit une estimation arrondie du temps de lecture en secondes."
+
+#: includes/class-types.php:63
+msgid "The content extra information."
+msgstr "Les informations additionnels du contenu."
+
+#: includes/class-types.php:67
+msgid "The estimated time to read content."
+msgstr "L'estimation de temps pour le lire le contenu."
+
+#: includes/class-types.php:71
+msgid "Reading time format."
+msgstr "Le format du temps de lecture."
+
+#: includes/class-types.php:83
+msgid "The number of words in post content."
+msgstr "Le nombre de mots dans le contenu de l'article."
+
+#: includes/class-wpgraphql-content-stats.php:54
+msgid ""
+"Add some stats to WPGraphQL: total posts, word count and estimated reading "
+"time."
+msgstr ""
+"Ajoute des statistiques dans WPGraphQL: nombre total d'articles, nombre de "
+"mots et estimation du temps de lecture."
+
+#: includes/partials/wp-graphql-content-stats-error-notice.php:14
+msgid ""
+"WPGraphQL must be installed and activated in order for WP GraphQL Content "
+"Stats to work."
+msgstr ""
+"WPGraphQL doit être installé et activé pour que WP GraphQL Content Stats "
+"puisse fonctionner."
