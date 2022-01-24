@@ -67,6 +67,11 @@ class WPGraphQL_Content_Stats {
 		 * The class responsible of plugin internationalization.
 		 */
 		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-i18n.php';
+
+		/**
+		 * The class responsible of WPGraphQL types registration.
+		 */
+		require_once plugin_dir_path( dirname( __FILE__ ) ) . 'includes/class-types.php';
 	}
 
 	/**
@@ -77,6 +82,16 @@ class WPGraphQL_Content_Stats {
 	private function set_locale() {
 		$translation = new I18n();
 		$translation->init();
+	}
+
+	/**
+	 * Add a content stats types to WPGraphQL.
+	 *
+	 * @since 0.1.0
+	 */
+	public function add_content_stats_types() {
+		$types = new Types();
+		$types->init();
 	}
 
 	/**
@@ -107,6 +122,7 @@ class WPGraphQL_Content_Stats {
 	public function run() {
 		$this->set_locale();
 		add_action( 'plugins_loaded', array( $this, 'check_plugin_dependencies' ) );
+		$this->add_content_stats_types();
 	}
 
 	/**
