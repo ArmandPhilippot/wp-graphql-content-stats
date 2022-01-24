@@ -1,0 +1,11 @@
+# Dependencies
+/vendor/
+/node_modules/
+
+# Dotenv
+.env
+.env.*
+!.env.example
+
+# Editor files
+.vscode
