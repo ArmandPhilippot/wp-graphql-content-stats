@@ -41,3 +41,17 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Rename this for your plugin and update it as you release new versions.
  */
 define( 'WPGRAPHQL_CONTENT_STATS_VERSION', '0.1.0' );
+
+/**
+ * Initialize the plugin.
+ *
+ * @since 0.1.0
+ */
+function wp_graphql_content_stats_init() {
+	require_once plugin_dir_path( __FILE__ ) . 'includes/class-wpgraphql-content-stats.php';
+
+	$plugin = new WPGraphQL_Content_Stats();
+	$plugin->run();
+}
+
+wp_graphql_content_stats_init();
