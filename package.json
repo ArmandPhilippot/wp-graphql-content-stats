@@ -1,0 +1,33 @@
+{
+	"name": "wpgraphql-content-stats",
+	"version": "0.1.0",
+	"description": "Add some stats to WPGraphQL: total posts, word count and estimated reading time.",
+	"license": "GPL-2.0-or-later",
+	"author": {
+		"name": "Armand Philippot",
+		"email": "contact@armandphilippot.com",
+		"url": "https://www.armandphilippot.com"
+	},
+	"homepage": "https://github.com/ArmandPhilippot/wp-graphql-content-stats#readme",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/ArmandPhilippot/wp-graphql-content-stats.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ArmandPhilippot/wp-graphql-content-stats/issues"
+	},
+	"keywords": [
+		"WordPress",
+		"plugin"
+	],
+	"private": true,
+	"scripts": {
+		"release": "standard-version -a -s"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^16.1.0",
+		"@commitlint/config-conventional": "^16.0.0",
+		"husky": "^7.0.4",
+		"standard-version": "^9.3.2"
+	}
+}
