@@ -96,7 +96,8 @@ class Fields {
 				'description' => __( 'Return the content statistics.', 'wpg-content-stats' ),
 				'resolve'     => function( \WPGraphQL\Model\Post $post_model ) {
 					// phpcs:ignore WordPress.NamingConventions.ValidVariableName
-					$raw_content = $post_model->contentRaw;
+					$post = get_post( $post_model->databaseId );
+					$raw_content = $post->post_content;
 					$words_count = $this->get_words_count( $raw_content );
 					$reading_time_in_minutes = $this->get_reading_time( $words_count );
 					$reading_time_in_seconds = $this->get_reading_time( $words_count, 'seconds' );
