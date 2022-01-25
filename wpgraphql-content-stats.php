@@ -17,7 +17,7 @@
  * Plugin Name:       WPGraphQL Content Stats
  * Plugin URI:        https://github.com/ArmandPhilippot/wp-graphql-content-stats
  * Description:       Add some stats to WPGraphQL: total posts, word count and estimated reading time.
- * Version:           1.0.0
+ * Version:           1.0.1
  * Requires at least: 5.2
  * Requires PHP:      7.2
  * Author:            Armand Philippot
@@ -40,7 +40,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * Start at version 0.1.0 and use SemVer - https://semver.org
  * Rename this for your plugin and update it as you release new versions.
  */
-define( 'WPGRAPHQL_CONTENT_STATS_VERSION', '1.0.0' );
+define( 'WPGRAPHQL_CONTENT_STATS_VERSION', '1.0.1' );
 
 /**
  * Initialize the plugin.

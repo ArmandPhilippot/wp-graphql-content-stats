@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [1.0.1](https://github.com/ArmandPhilippot/wp-graphql-content-stats/compare/v1.0.0...v1.0.1) (2022-01-25)
+
+
+### Bug Fixes
+
+* retrieve info fields value in frontend ([0ea9890](https://github.com/ArmandPhilippot/wp-graphql-content-stats/commit/0ea9890aa67a719d409bbc4ac7cbbfd07b004ca6))
+
 ## 1.0.0 (2022-01-24)
 
 
